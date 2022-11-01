@@ -1,42 +1,65 @@
+// const characters = [
+//   {
+//     id: 1,
+//     name: "Wonder Woman",
+//     alterEgo: "Diana Prince",
+//     alignment: "hero"
+//   },
+//   {
+//     id: 2,
+//     name: "Poison Ivy",
+//     alterEgo: "Pamela Lillian Isley",
+//     alignment: "villain"
+//   },
+//   {
+//     id: 3,
+//     name: "Black Canary",
+//     alterEgo: "Dinah Drake",
+//     alignment: "hero"
+//   },
+//   {
+//     id: 4,
+//     name: "Catwoman",
+//     alterEgo: "Selina Kyle",
+//     alignment: "villain"
+//   }
+// ];
 
-import './App.css';
+// const CardListItem = (props) => {
+//   return (
+//     <li>
+//       <div
+//         className="card-container"
+//         style={{
+//           width: "50%",
+//           border: "solid 3px #d3d3d3",
+//           margin: "10px auto"
+//         }}
+//       >
+//         <p>
+//           <strong>{props.character.name}</strong>
+//         </p>
+//         <p>{props.character.alterEgo}</p>
+//         <p>{props.character.alignment}</p>
+//       </div>
+//     </li>
+//   );
+// };
 
-// function App() {
+// const CardList = () => {
+//   return (
+//     <ul style={{ listStyleType: "none" }}>
+//       {characters.map(character => {
+//         return <CardListItem character={character} key={character.id} />;
+//       })}
+//     </ul>
+//   );
+// };
+
+// export default function App() {
 //   return (
 //     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
+//       <CardList />
 //     </div>
 //   );
 // }
-
-// export default App;
-
-import React from "react";
-
-const Card = () =>{
-  return(
-    <div className="UI-card">
-      <div className="content">Identity Card</div>
-      <div className="extra-content">
-        <div className="UI-two-buttons"></div>
-        <div className="UI basic green button">Approved</div>
-        <div className="UI basic red button">Reject</div>
-      </div>
-    </div>
-  )
-}
-
-export default Card;
